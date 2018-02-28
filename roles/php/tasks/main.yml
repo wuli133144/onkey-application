@@ -8,4 +8,9 @@
 
 - name: test vars
   debug: msg="user:{{user}}"
-  
+
+
+- name: copy 
+  template: src=php.cf.j2 dest=/opt/my.cf owner=root group=root mode=0644
+  notify:
+     - test php
