@@ -1,0 +1,11 @@
+---
+- name: install php
+  yum: name={{item}} state=present
+  with_items:
+      - php
+      - php-devel
+  
+
+- name: test vars
+  debug: msg="user:{{user}}"
+  

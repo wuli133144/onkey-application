@@ -1,0 +1,7 @@
+---
+- name: restart msyqld
+  debug: msg="{{item}}"
+  with_items:
+     - apple
+     - orange
+     - banane
