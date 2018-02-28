@@ -7,4 +7,12 @@
   roles:
      #- db 
      - php
+- name: install apache
+  gather_facts: no
+  hosts: web1
+  remote_user: root
+  
+
+  roles:
+     - httpd
        
